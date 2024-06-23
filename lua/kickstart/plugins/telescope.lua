@@ -69,6 +69,8 @@ return {
         },
       }
 
+      --      require('telescope').load_extension 'session-lens'
+
       -- Enable Telescope extensions if they are installed
       pcall(require('telescope').load_extension, 'fzf')
       pcall(require('telescope').load_extension, 'ui-select')
@@ -108,6 +110,10 @@ return {
       vim.keymap.set('n', '<leader>sn', function()
         builtin.find_files { cwd = vim.fn.stdpath 'config' }
       end, { desc = '[S]earch [N]eovim files' })
+
+      vim.keymap.set('n', '<leader>sp', function()
+        builtin.find_files { cwd = '~/dev/projects/' }
+      end, { desc = '[S]earch [P]rojects files' })
     end,
   },
 }

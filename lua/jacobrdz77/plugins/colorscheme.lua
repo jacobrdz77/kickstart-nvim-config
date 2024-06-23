@@ -1,14 +1,23 @@
 return {
-  'loctvl842/monokai-pro.nvim',
+  {
 
-  priority = 1000,
+    'loctvl842/monokai-pro.nvim',
 
-  init = function()
-    vim.cmd [[colorscheme monokai-pro]]
-  end,
+    priority = 1000,
 
-  opts = {
-    transparent_background = true,
-    filter = 'pro',
+    init = function()
+      vim.cmd [[colorscheme monokai-pro]]
+    end,
+
+    opts = {
+      transparent_background = true,
+      filter = 'pro',
+    },
+  },
+  {
+    'EdenEast/nightfox.nvim',
+    options = {
+      transparent = true,
+    },
   },
 }

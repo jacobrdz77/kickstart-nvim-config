@@ -22,6 +22,9 @@ require('lazy').setup({
 
   require 'kickstart.plugins.autopairs',
 
+  require 'kickstart.plugins.neo-tree',
+
+  require 'kickstart.plugins.gitsigns',
   { import = 'jacobrdz77.plugins' },
 }, {
   ui = {
