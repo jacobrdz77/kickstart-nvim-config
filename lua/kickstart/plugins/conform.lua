@@ -9,14 +9,14 @@ return {
           require('conform').format { async = true, lsp_fallback = true }
         end,
         mode = '',
-        desc = '[F]ormat buffer',
+        desc = '[f]ormat buffer',
       },
     },
     opts = {
       notify_on_error = false,
       format_on_save = function(bufnr)
-        -- Disable "format_on_save lsp_fallback" for languages that don't
-        -- have a well standardized coding style. You can add additional
+        -- disable "format_on_save lsp_fallback" for languages that don't
+        -- have a well standardized coding style. you can add additional
         -- languages here or re-enable it for the disabled ones.
         local disable_filetypes = { c = true, cpp = true }
         return {
@@ -25,15 +25,15 @@ return {
         }
       end,
       formatters_by_ft = {
-        -- Conform can also run multiple formatters sequentially
+        -- conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
-        -- You can use a sub-list to tell conform to run *until* a formatter
+        -- you can use a sub-list to tell conform to run *until* a formatter
         -- is found.
         lua = { 'stylua' },
-        javascript = { { 'prettier' } },
-        typescript = { { 'prettier' } },
-        css = { { 'css-variables-language-server' } },
+        javascript = { { 'prettierd' } },
+        typescript = { { 'prettierd' } },
+        css = { { 'css-variables-language-server', 'prettierd' } },
         c = { { 'clang-format' } },
       },
     },
