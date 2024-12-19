@@ -122,7 +122,10 @@ return {
         jsonls = {},
         tailwindcss = {},
         cssls = {},
-        clangd = {},
+        clangd = {
+          filetype = { 'c' },
+        },
+        gopls = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},

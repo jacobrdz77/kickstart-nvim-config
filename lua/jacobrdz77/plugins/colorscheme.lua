@@ -6,18 +6,24 @@ return {
     priority = 1000,
 
     init = function()
-      vim.cmd [[colorscheme monokai-pro]]
+      vim.cmd [[colorscheme monokai-pro-spectrum]]
     end,
 
     opts = {
-      transparent_background = true,
+      --      transparent_background = true,
       filter = 'pro',
     },
   },
   {
     'EdenEast/nightfox.nvim',
     options = {
-      transparent = true,
+      --     transparent = true,
     },
+  },
+  {
+    'bluz71/vim-moonfly-colors',
+    name = 'moonfly',
+    lazy = false,
+    priority = 1000,
   },
 }

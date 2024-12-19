@@ -3,7 +3,7 @@ return {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     opts = {
-      ensure_installed = { 'typescript', 'css', 'lua', 'markdown', 'vim', 'vimdoc' },
+      ensure_installed = { 'typescript', 'css', 'lua', 'markdown', 'vim', 'vimdoc', 'html' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
@@ -28,6 +28,27 @@ return {
       --    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
       --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
       --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+    end,
+  },
+  {
+    'windwp/nvim-ts-autotag',
+    config = function()
+      require('nvim-ts-autotag').setup {
+        opts = {
+          -- Defaults
+          enable_close = true, -- Auto close tags
+          enable_rename = true, -- Auto rename pairs of tags
+        },
+      }
+
+      vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+        underline = true,
+        virtual_text = {
+          spacing = 5,
+          severity_limit = 'Warning',
+        },
+        update_in_insert = true,
+      })
     end,
   },
 }

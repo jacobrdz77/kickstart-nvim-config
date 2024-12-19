@@ -9,7 +9,7 @@ vim.opt.clipboard = 'unnamedplus'
 
 vim.opt.breakindent = true
 vim.o.tabstop = 2
-vim.o.softtabstop = 2
+vim.o.tabstop = 2
 
 vim.opt.undofile = true
 

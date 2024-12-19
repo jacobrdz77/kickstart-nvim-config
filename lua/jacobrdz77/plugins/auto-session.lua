@@ -1,3 +1,4 @@
+vim.keymap.set('n', '<leader>ss', '<cmd>Autosession search <CR>', { desc = '[S]earch [Session]' })
 return {
   {
     'rmagatti/auto-session',

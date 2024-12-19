@@ -34,7 +34,7 @@ return {
         javascript = { { 'prettierd' } },
         typescript = { { 'prettierd' } },
         css = { { 'css-variables-language-server', 'prettierd' } },
-        c = { { 'clang-format' } },
+        c = { { 'clang-format', 'prettierd' } },
       },
     },
   },
