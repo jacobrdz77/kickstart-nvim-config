@@ -7,18 +7,21 @@ vim.opt.showmode = false
 
 vim.opt.clipboard = "unnamedplus"
 
-vim.g.clipboard = {
-  name = "macOS-clipboard",
-  copy = {
-    ["+"] = "pbcopy",
-    ["*"] = "pbcopy",
-  },
-  paste = {
-    ["+"] = "pbpaste",
-    ["*"] = "pbpaste",
-  },
-  cache_enabled = 0,
-}
+-- Only allows 
+if vim.fn.has("macunix") == 1 then
+  vim.g.clipboard = {
+    name = "macOS-clipboard",
+    copy = {
+      ["+"] = "pbcopy",
+      ["*"] = "pbcopy",
+    },
+    paste = {
+      ["+"] = "pbpaste",
+      ["*"] = "pbpaste",
+    },
+    cache_enabled = 0,
+  }
+end
 
 
 vim.opt.breakindent = true
