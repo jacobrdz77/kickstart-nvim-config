@@ -3,7 +3,8 @@ return {
   {
     'rmagatti/auto-session',
     opts = {
-      auto_session_enable_last_session = true,
+      suppressed_dirs = {"~/", "~/.config/nvim"},
+      auto_session_enable_last_session = false,
     },
   },
 }
