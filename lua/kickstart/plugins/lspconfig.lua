@@ -120,12 +120,6 @@ return {
         tsserver = {},
         html = {},
         jsonls = {},
-        tailwindcss = {},
-        cssls = {},
-        clangd = {
-          filetype = { 'c' },
-        },
-        gopls = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
