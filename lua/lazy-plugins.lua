@@ -8,7 +8,9 @@ require('lazy').setup({
 
   require 'kickstart/plugins/telescope',
 
---  require 'kickstart/plugins/lspconfig',
+  require 'kickstart/plugins/lspconfig',
+
+  require 'kickstart/plugins/neo-tree',
 
   require 'kickstart/plugins/conform',
 

@@ -31,11 +31,12 @@ return {
         -- you can use a sub-list to tell conform to run *until* a formatter
         -- is found.
         lua = { 'stylua' },
-        javascript = { { 'prettierd' } },
-        typescript = { { 'prettierd' } },
-        css = { { 'css-variables-language-server', 'prettierd' } },
-        c = { { 'clang-format', 'prettierd' } },
+        javascript = { 'prettierd' },
+        typescript = { 'prettierd' },
+        css = { 'css-variables-language-server', 'prettierd' },
+        c = { 'clang-format', 'prettierd' },
       },
+      stop_after_first = true,
     },
   },
 }

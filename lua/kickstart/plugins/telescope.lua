@@ -43,6 +43,9 @@ return {
         --   },
         -- },
         -- pickers = {}
+        defaults = {
+          file_ignore_patterns = { 'node_modules/' },
+        },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
@@ -92,6 +95,7 @@ return {
         builtin.find_files { cwd = vim.fn.stdpath 'config' }
       end, { desc = '[S]earch [N]eovim files' })
 
+      -- Searching under ~/dev/projects
       vim.keymap.set('n', '<leader>sp', function()
         builtin.find_files { cwd = '~/dev/projects/' }
       end, { desc = '[S]earch [P]rojects files' })
