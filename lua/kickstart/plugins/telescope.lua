@@ -42,9 +42,14 @@ return {
         --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
         --   },
         -- },
-        -- pickers = {}
+        pickers = {
+          find_files = {
+            hidden = true,
+            no_ignore = false,
+          },
+        },
         defaults = {
-          file_ignore_patterns = { 'node_modules/' },
+          file_ignore_patterns = { 'node_modules/', '%.png', '%.jpg', '^.git/' },
         },
         extensions = {
           ['ui-select'] = {
