@@ -6,23 +6,26 @@ require('lazy').setup({
 
   --require 'kickstart/plugins/which-key',
 
-  require 'kickstart/plugins/telescope',
-
---  require 'kickstart/plugins/lspconfig',
-
-  require 'kickstart/plugins/conform',
-
-  require 'kickstart/plugins/cmp',
-
-  require 'kickstart/plugins/todo-comments',
-
-  require 'kickstart/plugins/mini',
-
-  require 'kickstart/plugins/treesitter',
-
-  require 'kickstart.plugins.autopairs',
-
-  require 'kickstart.plugins.gitsigns',
+  -- require 'kickstart/plugins/telescope',
+  --
+  -- require 'kickstart/plugins/lspconfig',
+  --
+  -- require 'kickstart/plugins/nvim-tree',
+  --
+  -- require 'kickstart/plugins/conform',
+  --
+  -- require 'kickstart/plugins/cmp',
+  --
+  -- require 'kickstart/plugins/todo-comments',
+  --
+  -- require 'kickstart/plugins/mini',
+  --
+  -- require 'kickstart/plugins/treesitter',
+  --
+  -- require 'kickstart.plugins.autopairs',
+  --
+  -- require 'kickstart.plugins.gitsigns',
+	{import = 'kickstart.plugins'},
   { import = 'jacobrdz77.plugins' },
 }, {
   ui = {
