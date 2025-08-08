@@ -7,13 +7,13 @@ local function custom_attach(bufnr)
 
   -- default mappings
   api.config.mappings.default_on_attach(bufnr)
-  vim.g.loaded_netrw = 1
-  vim.g.loaded_netrwPlugin = 1
+  -- vim.g.loaded_netrw = 1
+  -- vim.g.loaded_netrwPlugin = 1
   vim.opt.termguicolors = true
 
   -- custom mappings
   vim.keymap.set('n', '<C-t>', api.tree.change_root_to_parent, opts 'Up')
-  vim.keymap.set('n', '\\', api.tree.toggle, opts 'Toggle tree')
+  vim.keymap.set('n', '<C-\\>', api.tree.toggle, opts 'Toggle tree')
 end
 
 return {
