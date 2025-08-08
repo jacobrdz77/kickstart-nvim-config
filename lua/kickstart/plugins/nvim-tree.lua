@@ -27,5 +27,8 @@ return {
     require('nvim-tree').setup {
       on_attach = custom_attach,
     }
+
+    -- Global mapping
+    vim.keymap.set('n', '<C-\\>', require('nvim-tree.api').tree.toggle, { desc = 'Toggle nvim-tree', noremap = true, silent = true })
   end,
 }
