@@ -10,6 +10,53 @@ A starting point for Neovim that is:
 
 **NOT** a Neovim distribution, but instead a starting point for your configuration.
 
+## Plugins Installed
+- asyncrun.vim
+- asyncrun.vim 
+- auto-session  start
+- cmp-nvim-lsp 󰢱 cmp_nvim_lsp  nvim-lspconfig
+- Comment.nvim  start
+- conform.nvim  start
+- dashboard-nvim  start
+- fidget.nvim  nvim-lspconfig
+- gitsigns.nvim  start
+- harpoon  start
+- inc-rename.nvim  start
+- indent-blankline.nvim  start
+- lazy.nvim  init.lua
+- lualine.nvim  start
+-  mason-lspconfig.nvim  nvim-lspconfig
+-  mason-nvim-dap.nvim
+-  mason-nvim-dap.mappings.source  nvim-lspconfig
+-  mason-tool-installer.nvim  nvim-lspconfig
+- mason.nvim  nvim-lspconfig
+- mini.nvim  start
+- monokai-pro.nvim colorscheme monokai-pro-spectrum
+- moonfly  start
+- neodev.nvim  nvim-lspconfig
+- nightfox.nvim  start
+- noice.nvim  VeryLazy
+- nui.nvim  noice.nvim
+- nvim-colorizer.lua  start
+- nvim-dap  start
+- nvim-dap-go  nvim-dap
+- nvim-dap-ui  nvim-dap
+- nvim-emmet  start
+- nvim-lint  BufReadPre
+- nvim-lspconfig  start
+- nvim-nio  nvim-dap
+- nvim-tree.lua 󰢱 nvim-tree.api  fidget.nvim
+- nvim-treesitter 󰢱 nvim-treesitter  nvim-ts-autotag
+- nvim-ts-autotag  start
+- nvim-web-devicons 󰢱 nvim-web-devicons  monokai-pro.nvim
+- plenary.nvim 󰢱 plenary.path  harpoon
+- telescope.nvim 11.24ms 󰢱 telescope  auto-session
+  - telescope-fzf-native.nvim  telescope.nvim
+  - telescope-ui-select.nvim  telescope.nvim
+- todo-comments.nvim 2.17ms  VimEnter
+- undotree 0.49ms  start
+- vim-sleuth 0.7ms  start
+
 ## Installation
 
 ### Install Neovim
@@ -226,7 +273,3 @@ sudo dnf install -y gcc make git ripgrep fd-find unzip neovim
 sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
-
-=======
-# kickstart-nvim-config
->>>>>>> f3131e5c59a889f9dbc34932730b7ccd41f9635d
