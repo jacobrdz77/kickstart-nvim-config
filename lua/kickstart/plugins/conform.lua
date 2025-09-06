@@ -24,6 +24,11 @@ return {
           lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
         }
       end,
+      formatters = {
+        prettier = {
+          command = vim.fn.stdpath 'data' .. '/mason/bin/prettier',
+        },
+      },
       formatters_by_ft = {
         -- conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
@@ -31,12 +36,13 @@ return {
         -- you can use a sub-list to tell conform to run *until* a formatter
         -- is found.
         lua = { 'stylua' },
-        javascript = { 'prettierd', 'prettier', stop_after_first = true },
-        javascriptreact = { 'prettierd', 'prettier', stop_after_first = true },
-        typescript = { 'prettierd', 'prettier', stop_after_first = true },
-        typescriptreact = { 'prettierd', 'prettier', stop_after_first = true },
-        css = { 'css-variables-language-server', 'prettierd' },
-        c = { 'clang-format', 'prettierd' },
+        javascript = { 'prettier', stop_after_first = true },
+        javascriptreact = { 'prettier', stop_after_first = true },
+        typescript = { 'prettier', stop_after_first = true },
+        typescriptreact = { 'prettier', stop_after_first = true },
+        tsx = { 'prettier', stop_after_first = true },
+        css = { 'prettier' },
+        c = { 'clang-format' },
       },
       stop_after_first = true,
     },
