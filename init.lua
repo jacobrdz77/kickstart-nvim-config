@@ -10,6 +10,8 @@ require 'options'
 -- [[ Basic Keymaps ]]
 require 'keymaps'
 
+require 'float-terminal'
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 require 'lazy-bootstrap'
 

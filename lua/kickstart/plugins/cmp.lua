@@ -98,6 +98,13 @@ return {
             end
           end, { 'i', 's' }),
 
+          -- ['<C-Space>'] = function()
+          --   if cmp.visible_docs() then
+          --     cmp.close_docs()
+          --   else
+          --     cmp.open_docs()
+          --   end
+          -- end,
           -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
           --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
         },
