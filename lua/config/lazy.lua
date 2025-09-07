@@ -53,3 +53,5 @@ require("lazy").setup({
     },
   },
 })
+
+require("config.highlights").setup()
