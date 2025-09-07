@@ -25,7 +25,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.autopairs',
   --
   -- require 'kickstart.plugins.gitsigns',
-	{import = 'kickstart.plugins'},
+  { import = 'kickstart.plugins' },
   { import = 'jacobrdz77.plugins' },
 }, {
   ui = {
