@@ -76,4 +76,8 @@ return {
       },
     },
   },
+  config = function()
+    vim.api.nvim_set_hl(0, "SnacksPickerPathIgnored", { fg = "#B3B3B3" }) --  SnacksPickerPathIgnored
+    vim.api.nvim_set_hl(0, "SnacksPickerDir", { fg = "#A5A4A8", default = true, link = "NonText" }) --  SnacksPickerPathIgnored
+  end,
 }
