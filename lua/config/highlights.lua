@@ -6,6 +6,6 @@ return {
     vim.api.nvim_set_hl(0, "TelescopeSelection", { fg = "#B3B3B3" }) -- Telescope results
     vim.api.nvim_set_hl(0, "NeoTreeDirectoryName", { fg = "#B3B3B3" }) -- Telescope results
     vim.api.nvim_set_hl(0, "SnacksPickerPathIgnored", { fg = "#B3B3B3" }) --  SnacksPickerPathIgnored
-    vim.api.nvim_set_hl(0, "NonText", { fg = "#59575B" }) --  NonText
+    vim.api.nvim_set_hl(0, "NonText", { fg = "#7F7C83" }) --  NonText
   end,
 }
