@@ -1,0 +1,22 @@
+return {
+  {
+    "stevearc/conform.nvim",
+    opts = function(_, opts)
+      -- Merge with existing formatters
+      opts.formatters_by_ft = vim.tbl_deep_extend("force", opts.formatters_by_ft or {}, {
+        javascript = { "prettierd" },
+        javascriptreact = { "prettierd" },
+        typescript = { "prettierd" },
+        typescriptreact = { "prettierd" },
+        -- Add others like css, html if needed
+      })
+      opts.formatters = vim.tbl_deep_extend("force", opts.formatters or {}, {
+        prettierd = {
+          -- Optional: Pass args for your prefs (overrides config file)
+          -- prepend_args = { "--single-quote", "--jsx-single-quote" },
+        },
+      })
+      return opts
+    end,
+  },
+}
